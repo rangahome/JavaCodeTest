@@ -1,0 +1,53 @@
+<html>
+<body>
+
+<h3>Hangman</h3>
+
+<p>
+You are to create a command line Hangman game using the provided classes.
+
+You may not change the PUBLIC method signatures.  You are expected to modify the code where exceptions are being thrown
+but should not alter any code that has already been provided for any of the classes.  You may add as many classes and methods as
+necessary to implement the game.
+</p>
+
+<p>
+The game play requirements are as follows:
+</p>
+
+<ul>
+    <li>The game is to be started from the command line.</li>
+    <li>The user can specify the word to guess and the number of incorrect guesses that can be made before the game is over.</li>
+    <li>The game has three states:
+        <ul>
+            <li>LOST: The user has many too many incorrect guesses.  There is no limit to the number of guesses a user can make, but they can only make a finite number of INCORRECT guesses.</li>
+            <li>WON: The user has guessed all the letters of the word before the game has reached the LOST state.</li>
+            <li>IN_PROGRESS: The user has neither WON nor LOST the game.</li>
+        </ul>
+    </li>
+    <li>There is no limit on the number characters in the word.</li>
+    <li>A user can only input a single alphabetical character at a time for their guess.</li>
+    <li>The word will only contain characters, spaces, and hyphens.  Hyphens should be displayed as is to the user and spaces should be displayed back as two spaces for readability.  A user is not allowed to guess spaces or hyphens.</li>
+    <li>The system will display the current status of the game.  If the phrase is "DOG FOOD", at the start of the game, the display will show "*** ****".  As a user guesses letters correctly, the display will update. If the user guesses "D", the display will show "D** ****".  If the user then enters an incorrect guess, "T", the display will contiue to show "D** ****"</li>
+    <li>If there is any input or validation error, the system will provide useful feedback of that error to the user.</li>
+</ul>
+
+<p>
+Your HangmanEngine must pass the HangmanEngineTest.  You are expected to add additional tests to demonstrate the behaviour of your game engine.  Extra credit will be given for successful JUnit tests of the HangmanConsole.
+</p>
+
+Your code will be evaluated for:
+<ul>
+    <li>Simplicity</li>
+    <li>Style</li>
+    <li>Approach/Algorithm</li>
+    <li>Completeless of testing</li>
+</ul>
+
+<p>
+We will not answer any questions during the execution of this test.  Make and document all simplifing assumptions necessary.
+</p>    
+
+</body>
+
+</html>
